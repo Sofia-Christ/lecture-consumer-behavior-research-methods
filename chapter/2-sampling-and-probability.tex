@@ -170,10 +170,36 @@
     additional information to the univariate analysis.
     $$P(X \cap Y) = P(X) \time P(Y)$$
     
-    \paragraph{Chi-Square Hypothesis Testing} The Chi-Square can be computed by comparing the frequency that we would
+    \paragraph{Chi-Square Hypothesis Testing} The Chi-Square ($\Xi^2$) can be computed by comparing the frequency that we would
     have in the case of perfect statistical independence between the two studied
-    variables and the observed frequency. To do this,
+    variables and the observed frequency. The index Chi-Square becomes lower the more we are close to the hypothesis
+    of independence and assumes the phenomena 0 if x and y are independent. The Chi-Square depends also on the number of observations and therefore
+    increases when the number of rows or columns increases. If the sample is too
+    small, the value of $\Xi^2$  tends to be overestimated; when the sample is to big,
+    the value of $\Xi^2$ tends to be underestimated. With $O = $ the observed frequency, and $E =$ the expected Frequency
     
+    $$ \Xi^2 = \frac{1}{d}\sum_{k=1}^{n} \frac{(O_k - E_k)^2}{E_k}\]    $$
+    
+    \paragraph{Cramer's V} Relativ $\Xi^2$
+    $$V=\sqrt{\frq{\Xi^2}{N \time (min-value-of-row-or-column)}}$$
+    
+    \subsection{Associative Analysis}
 
-    
+    \paragraph{Covariance $Cov (x,y)$} determine the direction of a linear relationship
+    between two variables. It is an absolute index: it indicates the existence and direction of the relation
+    between two variables, but not the strength of their relation.
+    Cov (x,y) > 0 $\rightarrow$ If x and y tend to increase or decrease together
+    Cov (x,y) < 0 $\rightarrow$ If one variable tends to increase as the other decreases
+    Cov (x,y) = 0 $\rightarrow$ discordance between x and y
+
+    $$cov(x,y) = \frq{1}{N} \time \sum_{i=1}^N (x_1 - y_1)^2$$
+
+    \paragraph{Linear correlation coefficient $r(x,y)$} To assess the strength of a linear relationship between two variables between 1 and -1.
+    r(x,y) = -1 $\rightarrow$ y is a linear function of x and the observation are on a straight line with positive slope
+    r(x,y) = 1 $\rightarrow$ y is a linear function of x and the observation are on a straight line with negative slope
+    r(x,y) = 0 $\rightarrow$  there is no linear relation between the variables x and y
+
+    $$r(x,y) = \frq{cov(x,y)}{\ro_x \time \ro_y}$$
+
+
 \end{document}
