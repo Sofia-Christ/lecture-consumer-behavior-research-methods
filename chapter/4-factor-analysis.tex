@@ -14,6 +14,8 @@
 
     \subsection{Varaince-Covariance-matrix}
 
+    \paragraph{Factor Analysis} Reduces the original number of attributes to a smaller number of factors, 
+    each containing a set of attributes that hang together
 
     \paragraph{Covariance} Hints if the result of one variable gives you information about the other $\rightarrow$
     A small standard deviation will cause a covariance near zero.
@@ -47,10 +49,23 @@
     \end{bmatrix}
     $$
     }
+    
+    \paragraph{Principal component} The principal components analysis allows to compute factor weights in order to extract the maximum possible variance
+    from the original variables and to continue factoring until there is no more meaningful variance left
+    $\rightarrow$ \textbf{Latent Variable} a variable, that can not be meassured directly.
+    This analysis is widely used in the market segmentation: for example it allows to identify important consumers evaluations about different dimensions 
+    of a product/service.
+    From a statistical point of view, the aim of the factor analysis is to identify a reduced number of linear combinations of the original variables 
+    that explain most of the variance of the same variables $X$, a weight $a$. Every linear combination is a function of all the original variables, 
+    but it is correlated in particular to some of them
+    $c=a_1 X_1+a_2 X_2+ ... +a_n X_n$
 
-
-    \begin{matrix}
-        1 & 2 & 3\\
-        a & b & c
-    \end{matrix}
+    The components or factors are not correlated among each other and their maximal number is equal to the number of original variables ($p$).
+    The components explain a decreasing percentage of data variance. The higher the correlation of the original variables, the higher is the power of the factor analysis, 
+    and the less information you loose by performing it
+    
+    \paragraph{Procedure} \textit{Identify gaps for new products} $\rightarrow$ Identify competitors $\rightarrow$ Identify important product dimensions for mapping
+    $\rightarrow$ Use customer surveys to map competitors and yourself along these dimensions $\rightarrow$ Identifying Dimensions $\rightarrow$ Interpret Perceptual Map
+    
+    
 \end{section}
